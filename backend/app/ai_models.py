@@ -72,7 +72,7 @@ class OpenAIModel:
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": f"Generate a list of insightful questions based on the following text:\n\n{text}"}
                 ],
-                max_tokens=150,
+                max_tokens=300,
                 temperature=0.7,
             )
             questions_text = response['choices'][0]['message']['content'].strip()
